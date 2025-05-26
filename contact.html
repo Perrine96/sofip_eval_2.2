@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navLaura">
+        <img
+          class="logo"
+          src="/image/iconetitre sans fond.png"
+          alt="Logo de la crèche"
+        />
+        <a href=""
+          ><img
+            src="/image/icons8-maison-de-campagne-50.png"
+            alt=""
+          />Accueil</a
+        >
+        <a href=""
+          ><img
+            src="/image/icons8-licorne-de-lecture-50.png"
+            alt=""
+          />Galerie</a
+        >
+        <a href=""
+          ><img src="/image/icons8-téléphone-50.png" alt="" />Contact</a
+        >
+      </nav>
+    </header>
+    <main>
+      <h1>Formulaires d'inscription</h1>
+      <section class="formulaires">
+        <div class="formulaires-parents">
+          <!-- Formulaire parent 1  -->
+          <form action="" class="formParents">
+            <h2>Formulaire parent 1</h2>
+            <!-- Groupe Nom/Prénom -->
+            <div class="input-group">
+              <input type="text" placeholder="Nom" id="nom" name="nom" />
+              <input
+                type="text"
+                placeholder="Prénom"
+                id="prenom"
+                name="prenom"
+              />
+            </div>
+            <div class="full-width">
+              <input
+                type="text"
+                placeholder="nom_entreprise"
+                name="nom_entreprise"
+              />
+            </div>
+            <div class="full-width">
+              <input
+                type="text"
+                placeholder="adresse"
+                id="adresse"
+                name="adresse"
+              />
+            </div>
+            <!-- Groupe Bâtiment/Code postal -->
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="batiment"
+                id="batiment"
+                name="batiment"
+              />
+              <input
+                type="text"
+                placeholder="code_postal"
+                id="code_postal"
+                name="code_postal"
+              />
+            </div>
+            <!-- Groupe Revenu/Profession -->
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="revenu_annuel"
+                id="revenu_annuel"
+                name="revenu_annuel"
+              />
+              <input
+                type="text"
+                placeholder="profession"
+                id="profession"
+                name="profession"
+              />
+            </div>
+            <div class="full-width">
+              <input
+                type="number"
+                placeholder="nombre_enfants"
+                id="nombre_enfants"
+                name="nombre_enfants"
+              />
+            </div>
+            <div class="full-width">
+              <textarea
+                id="commentaires"
+                placeholder="Commentaire et informations complémentaires (allergies...)"
+                name="commentaires"
+              ></textarea>
+            </div>
+          </form>
+          <!-- Formulaire parent 2  -->
+          <form action="" class="formParents">
+            <h2>Formulaire parent 2</h2>
+            <!-- Groupe Nom/Prénom -->
+            <div class="input-group">
+              <input type="text" placeholder="Nom" id="nom" name="nom" />
+              <input
+                type="text"
+                placeholder="Prénom"
+                id="prenom"
+                name="prenom"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="nom_entreprise"
+                name="nom_entreprise"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="adresse"
+                id="adresse"
+                name="adresse"
+              />
+            </div>
+            <!-- Groupe Bâtiment/Code postal -->
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="batiment"
+                id="batiment"
+                name="batiment"
+              />
+              <input
+                type="text"
+                placeholder="code_postal"
+                id="code_postal"
+                name="code_postal"
+              />
+            </div>
+            <!-- Groupe Revenu/Profession -->
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="revenu_annuel"
+                id="revenu_annuel"
+                name="revenu_annuel"
+              />
+              <input
+                type="text"
+                placeholder="profession"
+                id="profession"
+                name="profession"
+              />
+            </div>
+            <div>
+              <input
+                type="number"
+                placeholder="nombre_enfants"
+                id="nombre_enfants"
+                name="nombre_enfants"
+              />
+            </div>
+            <div>
+              <textarea
+                id="commentaires"
+                placeholder="Commentaire et informations complémentaires (allergies...)"
+                name="commentaires"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <!-- Formulaire enfant  -->
+        <form action="" class="formParents">
+          <h2>Formulaire enfant</h2>
+          <div>
+            <input type="text" placeholder="Nom" id="nom" name="nom" />
+          </div>
+          <div>
+            <input type="text" placeholder="Prénom" id="prenom" name="prenom" />
+          </div>
+          <div>
+            <label for="sexe">Sexe : </label>
+            <input type="radio" name="sexe" value="homme" />
+            <label for="sexe">M</label>
+
+            <input type="radio" name="sexe" value="femme" />
+            <label for="sexe">F</label>
+          </div>
+          <div>
+            <label for="date">Date de naissance : </label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div>
+            <label for="date">Date d'accueil souhaitée : </label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div>
+            <label for="jours">Jour(s) de la semaine souhaité(s) : </label>
+            <input type="checkbox" name="jours" value="lundi" />
+            <label for="jours">Lundi</label>
+
+            <input type="checkbox" name="jours" value="mardi" />
+            <label for="jours">Mardi</label>
+
+            <input type="checkbox" name="jours" value="mercredi" />
+            <label for="jours">Mercredi</label>
+
+            <input type="checkbox" name="jours" value="jeudi" />
+            <label for="jours">Jeudi</label>
+
+            <input type="checkbox" name="jours" value="vendredi" />
+            <label for="jours">Vendredi</label>
+
+            <input type="checkbox" name="jours" value="samedi" />
+            <label for="jours">Samedi</label>
+
+            <input type="checkbox" name="jours" value="dimanche" />
+          </div>
+
+          <div>
+            <textarea
+              id="commentaires"
+              placeholder="Commentaire et informations complémentaires (allergies...)"
+              name="commentaires"
+            ></textarea>
+          </div>
+        </form>
+      </section>
+      <section class="maps">
+        <h2>Où nous trouver ?</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1568471.7233536453!2d1.369624665995281!3d49.66268243586366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32b769c4230c5%3A0x9424d07952ff23c!2sMicro-cr%C3%A8che%20La%20Maison%20du%20Choupisson!5e1!3m2!1sfr!2sfr!4v1747921281550!5m2!1sfr!2sfr"
+          width="200"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section class="team">
+        <h2>L'équipe</h2>
+        <div class="membre">
+          <div class="directeur">
+            <h3>Directeur</h3>
+            <img src="" alt="photo de Mr Dumont le directeur" />
+            <p>Sébastien Dumont</p>
+            <p>03 27 96 33 28</p>
+            <p>sebastien.dumont@contact.com</p>
+          </div>
+          <div class="Responsable">
+            <h3>Directeur</h3>
+            <img src="" alt="Photo de Mme Dupont la Responsable" />
+            <p>Fabienne Dupont</p>
+            <p>03 27 96 33 21</p>
+            <p>fabienne.dupont@contact.com</p>
+          </div>
+          <div class="Trésorière">
+            <h3>Trésorière</h3>
+            <img src="" alt="Photo de Mlle Maréchal la Trésorière" />
+            <p>Emilie Maréchal</p>
+            <p>03 27 96 33 289</p>
+            <p>emilie.marechal@contact.com</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
