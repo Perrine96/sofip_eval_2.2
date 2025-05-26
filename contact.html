@@ -16,20 +16,26 @@
           src="/image/iconetitre sans fond.png"
           alt="Logo de la crèche"
         />
-        <a href=""
+        <a href="/index.html"
           ><img
+            class="icon-nav"
             src="/image/icons8-maison-de-campagne-50.png"
             alt=""
           />Accueil</a
         >
-        <a href=""
+        <a href="/galerie.html"
           ><img
+            class="icon-nav"
             src="/image/icons8-licorne-de-lecture-50.png"
             alt=""
           />Galerie</a
         >
-        <a href=""
-          ><img src="/image/icons8-téléphone-50.png" alt="" />Contact</a
+        <a href="/contact.html"
+          ><img
+            class="icon-nav"
+            src="/image/icons8-téléphone-50.png"
+            alt=""
+          />Contact</a
         >
       </nav>
     </header>
@@ -187,53 +193,54 @@
           </form>
         </div>
         <!-- Formulaire enfant  -->
-        <form action="" class="formParents">
+        <form action="" class="formEnfant">
           <h2>Formulaire enfant</h2>
-          <div>
+          <!-- Groupe Nom/Prénom -->
+          <div class="input-group">
             <input type="text" placeholder="Nom" id="nom" name="nom" />
-          </div>
-          <div>
             <input type="text" placeholder="Prénom" id="prenom" name="prenom" />
           </div>
-          <div>
+          <div class="genreEnfant">
             <label for="sexe">Sexe : </label>
-            <input type="radio" name="sexe" value="homme" />
-            <label for="sexe">M</label>
+            <div class="male">
+              <label for="sexe">M</label>
+              <input type="radio" name="sexe" value="homme" />
+            </div>
 
-            <input type="radio" name="sexe" value="femme" />
-            <label for="sexe">F</label>
+            <div class="femelle">
+              <label for="sexe">F</label>
+              <input type="radio" name="sexe" value="femme" />
+            </div>
           </div>
-          <div>
+          <!-- Groupe Date de naissance/Date d'accueil souhaitée -->
+          <div class="input-group">
             <label for="date">Date de naissance : </label>
             <input type="date" id="date" name="date" />
-          </div>
-          <div>
+
             <label for="date">Date d'accueil souhaitée : </label>
             <input type="date" id="date" name="date" />
           </div>
-          <div>
-            <label for="jours">Jour(s) de la semaine souhaité(s) : </label>
-            <input type="checkbox" name="jours" value="lundi" />
+          <!-- groupe Jour(s) de la semaine souhaité(s) -->
+          <label for="jours">Jour(s) de la semaine souhaité(s) : </label>
+          <div class="jrs">
             <label for="jours">Lundi</label>
+            <input type="checkbox" name="jours" value="lundi" />
 
-            <input type="checkbox" name="jours" value="mardi" />
             <label for="jours">Mardi</label>
+            <input type="checkbox" name="jours" value="mardi" />
 
-            <input type="checkbox" name="jours" value="mercredi" />
             <label for="jours">Mercredi</label>
+            <input type="checkbox" name="jours" value="mercredi" />
 
-            <input type="checkbox" name="jours" value="jeudi" />
             <label for="jours">Jeudi</label>
+            <input type="checkbox" name="jours" value="jeudi" />
 
-            <input type="checkbox" name="jours" value="vendredi" />
             <label for="jours">Vendredi</label>
+            <input type="checkbox" name="jours" value="vendredi" />
 
-            <input type="checkbox" name="jours" value="samedi" />
             <label for="jours">Samedi</label>
-
-            <input type="checkbox" name="jours" value="dimanche" />
+            <input type="checkbox" name="jours" value="samedi" />
           </div>
-
           <div>
             <textarea
               id="commentaires"
@@ -243,41 +250,52 @@
           </div>
         </form>
       </section>
-      <section class="maps">
-        <h2>Où nous trouver ?</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1568471.7233536453!2d1.369624665995281!3d49.66268243586366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32b769c4230c5%3A0x9424d07952ff23c!2sMicro-cr%C3%A8che%20La%20Maison%20du%20Choupisson!5e1!3m2!1sfr!2sfr!4v1747921281550!5m2!1sfr!2sfr"
-          width="200"
-          height="200"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-      <section class="team">
-        <h2>L'équipe</h2>
-        <div class="membre">
-          <div class="directeur">
-            <h3>Directeur</h3>
-            <img src="" alt="photo de Mr Dumont le directeur" />
-            <p>Sébastien Dumont</p>
-            <p>03 27 96 33 28</p>
-            <p>sebastien.dumont@contact.com</p>
-          </div>
-          <div class="Responsable">
-            <h3>Directeur</h3>
-            <img src="" alt="Photo de Mme Dupont la Responsable" />
-            <p>Fabienne Dupont</p>
-            <p>03 27 96 33 21</p>
-            <p>fabienne.dupont@contact.com</p>
-          </div>
-          <div class="Trésorière">
-            <h3>Trésorière</h3>
-            <img src="" alt="Photo de Mlle Maréchal la Trésorière" />
-            <p>Emilie Maréchal</p>
-            <p>03 27 96 33 289</p>
-            <p>emilie.marechal@contact.com</p>
+      <section class="maps-team">
+        <div class="maps">
+          <h2>Où nous trouver ?</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1568471.7233536453!2d1.369624665995281!3d49.66268243586366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32b769c4230c5%3A0x9424d07952ff23c!2sMicro-cr%C3%A8che%20La%20Maison%20du%20Choupisson!5e1!3m2!1sfr!2sfr!4v1747921281550!5m2!1sfr!2sfr"
+            width="400"
+            height="210"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="team">
+          <h2>L'équipe</h2>
+          <div class="membre">
+            <div class="directeur">
+              <h3>Directeur</h3>
+              <img
+                src="/image/Directeur.jpg"
+                alt="photo de Mr Dumont le directeur"
+              />
+              <p>Sébastien Dumont</p>
+              <p>03 27 96 33 28</p>
+              <p>sebastien.dumont@contact.com</p>
+            </div>
+            <div class="Responsable">
+              <h3>Directeur</h3>
+              <img
+                src="/image/Responsable.jpg"
+                alt="Photo de Mme Dupont la Responsable"
+              />
+              <p>Fabienne Dupont</p>
+              <p>03 27 96 33 21</p>
+              <p>fabienne.dupont@contact.com</p>
+            </div>
+            <div class="Trésorière">
+              <h3>Trésorière</h3>
+              <img
+                src="/image/Trésorière.jpg"
+                alt="Photo de Mlle Maréchal la Trésorière"
+              />
+              <p>Emilie Maréchal</p>
+              <p>03 27 96 33 289</p>
+              <p>emilie.marechal@contact.com</p>
+            </div>
           </div>
         </div>
       </section>
