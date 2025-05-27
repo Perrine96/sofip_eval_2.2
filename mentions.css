@@ -1,5 +1,9 @@
 main {
   padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -4vh;
+
 }
 
 .choupisson_gauche {
@@ -67,9 +71,6 @@ h1 {
 .texteRGPD {
   font-family: "baloo 2";
   font-size: 18px;
-}
-
-.texteRGPD {
   margin: auto;
   max-width: 1800px;
 }
@@ -77,10 +78,61 @@ h1 {
 .dodoherisson {
   width: 200px;
   height: 200px;
-  position: r;
-  top: 0;
-  left: 0;
+  float: right;
+  margin-left: 20px;
+  padding: 0;
 }
+
+
+/* Footer styles */
+.footer {
+  background-color: #A1D89F;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  gap: 10px;
+
+  img {
+    height: 30px;
+  }
+}
+
+.newsletter input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+}
+
+.newsletter button {
+  background-color: #5CA96B;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.social {
+  margin-top: 10px;
+}
+
+.social img {
+  margin: 0 5px;
+}
+
+.footer-bottom {
+  margin-top: 15px;
+  color: #333;
+ 
+}
+
 
 
 
@@ -89,7 +141,8 @@ h1 {
     padding: 8rem 2.3rem 2.5rem 2.5rem;
   }
   .dodoherisson {
-    width: 10px;
+    display: none;
+   
   }
   
   .barre {
@@ -116,4 +169,13 @@ h1 {
     line-height: 1.6;
     text-align: center;
   }
+
+  .footer {
+    font-size: 12px;
+  }
+  .newsletter{
+    display: flex;
+    flex-direction: row;
+  }
 }
+
