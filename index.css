@@ -6,36 +6,12 @@
 }
 
 
-
 body,
 html {
   margin: 0;
   padding: 0;
   font-family: "Arial Rounded MT Bold", sans-serif;
 }
-
-main {
-  padding-top: 15rem;
-}
-
-/* .top-bar {
-  background-color: #6BB4D6;
-  height: 18vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 10px;
-  color: white;
-  box-shadow: 0px 6px 14px 3px rgba(0, 0, 0, 0.4);
-  position: relative;
-  z-index: 10;
-} */
-
-
-/* .logo img {
-  margin-right: 10px;
-  height: 150px;
-} */
 
 .menu a {
   display: inline-block;
