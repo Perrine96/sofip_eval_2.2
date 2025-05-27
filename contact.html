@@ -118,87 +118,84 @@
             </div>
           </form>
           <!-- Formulaire parent 2  -->
-          <form id="formParent2" action="" class="formParents">
+          <form action="" class="formParents">
             <h2>
               Formulaire parent 2
-              <button>
-                <img
-                  class="chevronParent"
-                  src="/image/icons8-chevron-bas-30.png"
-                  alt="Chevron bas"
-                />
+              <button class="btn_form_parent">
+                <img src="/image/icons8-chevron-bas-30.png" alt="Chevron bas" />
               </button>
             </h2>
-
-            <!-- Groupe Nom/Prénom -->
-            <div class="input-group">
-              <input type="text" placeholder="Nom" id="nom2" name="nom" />
-              <input
-                type="text"
-                placeholder="Prénom"
-                id="prenom2"
-                name="prenom"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="nom_entreprise"
-                name="nom_entreprise"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="adresse"
-                id="adresse2"
-                name="adresse"
-              />
-            </div>
-            <!-- Groupe Bâtiment/Code postal -->
-            <div class="input-group">
-              <input
-                type="text"
-                placeholder="batiment"
-                id="batiment2"
-                name="batiment"
-              />
-              <input
-                type="text"
-                placeholder="code_postal"
-                id="code_postal2"
-                name="code_postal"
-              />
-            </div>
-            <!-- Groupe Revenu/Profession -->
-            <div class="input-group">
-              <input
-                type="text"
-                placeholder="revenu_annuel"
-                id="revenu_annuel2"
-                name="revenu_annuel"
-              />
-              <input
-                type="text"
-                placeholder="profession"
-                id="profession2"
-                name="profession"
-              />
-            </div>
-            <div>
-              <input
-                type="number"
-                placeholder="nombre_enfants"
-                id="nombre_enfants2"
-                name="nombre_enfants"
-              />
-            </div>
-            <div>
-              <textarea
-                id="commentaires2"
-                placeholder="Commentaire et informations complémentaires (allergies...)"
-                name="commentaires"
-              ></textarea>
+            <div class="hiddenFormP hidden">
+              <!-- Groupe Nom/Prénom -->
+              <div class="input-group">
+                <input type="text" placeholder="Nom" id="nom2" name="nom" />
+                <input
+                  type="text"
+                  placeholder="Prénom"
+                  id="prenom2"
+                  name="prenom"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="nom_entreprise"
+                  name="nom_entreprise"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="adresse"
+                  id="adresse2"
+                  name="adresse"
+                />
+              </div>
+              <!-- Groupe Bâtiment/Code postal -->
+              <div class="input-group">
+                <input
+                  type="text"
+                  placeholder="batiment"
+                  id="batiment2"
+                  name="batiment"
+                />
+                <input
+                  type="text"
+                  placeholder="code_postal"
+                  id="code_postal2"
+                  name="code_postal"
+                />
+              </div>
+              <!-- Groupe Revenu/Profession -->
+              <div class="input-group">
+                <input
+                  type="text"
+                  placeholder="revenu_annuel"
+                  id="revenu_annuel2"
+                  name="revenu_annuel"
+                />
+                <input
+                  type="text"
+                  placeholder="profession"
+                  id="profession2"
+                  name="profession"
+                />
+              </div>
+              <div>
+                <input
+                  type="number"
+                  placeholder="nombre_enfants"
+                  id="nombre_enfants2"
+                  name="nombre_enfants"
+                />
+              </div>
+              <div>
+                <textarea
+                  id="commentaires2"
+                  placeholder="Commentaire et informations complémentaires (allergies...)"
+                  name="commentaires"
+                ></textarea>
+              </div>
             </div>
           </form>
         </div>
@@ -206,82 +203,79 @@
         <form action="" class="formEnfant">
           <h2>
             Formulaire enfant
-            <button>
-              <img
-                class="chevronEnfant"
-                src="/image/icons8-chevron-bas-30.png"
-                alt="Chevron bas"
-              />
+            <button class="btn_form_enfant">
+              <img src="/image/icons8-chevron-bas-30.png" alt="Chevron bas" />
             </button>
           </h2>
-
-          <!-- Groupe Nom/Prénom -->
-          <div class="input-group">
-            <input type="text" placeholder="Nom" id="nom3" name="nom" />
-            <input
-              type="text"
-              placeholder="Prénom"
-              id="prenom3"
-              name="prenom"
-            />
-          </div>
-          <div class="genreEnfant">
-            <label for="sexe">Sexe : </label>
-            <div class="male">
-              <label for="sexeM">M</label>
-              <input type="radio" id="sexeM" name="sexe" value="homme" />
+          <div class="hiddenFormE hidden">
+            <!-- Groupe Nom/Prénom -->
+            <div class="input-group">
+              <input type="text" placeholder="Nom" id="nom3" name="nom" />
+              <input
+                type="text"
+                placeholder="Prénom"
+                id="prenom3"
+                name="prenom"
+              />
             </div>
+            <div class="genreEnfant">
+              <label for="sexe">Sexe : </label>
+              <div class="male">
+                <label for="sexeM">M</label>
+                <input type="radio" id="sexeM" name="sexe" value="homme" />
+              </div>
 
-            <div class="femelle">
-              <label for="sexeF">F</label>
-              <input type="radio" id="sexeF" name="sexe" value="femme" />
+              <div class="femelle">
+                <label for="sexeF">F</label>
+                <input type="radio" id="sexeF" name="sexe" value="femme" />
+              </div>
             </div>
-          </div>
-          <!-- Groupe Date de naissance/Date d'accueil souhaitée -->
-          <div class="input-group">
-            <label for="date">Date de naissance : </label>
-            <input type="date" id="date" name="date" />
+            <!-- Groupe Date de naissance/Date d'accueil souhaitée -->
+            <div class="input-group">
+              <label for="date">Date de naissance : </label>
+              <input type="date" id="date" name="date" />
 
-            <label for="dateAccueil">Date d'accueil souhaitée : </label>
-            <input type="date" id="dateAccueil" name="date" />
-          </div>
-          <!-- groupe Jour(s) de la semaine souhaité(s) -->
-          <label for="jours">Jour(s) de la semaine souhaité(s) : </label>
-          <div class="jrs">
-            <label for="lundi">Lundi</label>
-            <input type="checkbox" id="lundi" name="jours" value="lundi" />
+              <label for="dateAccueil">Date d'accueil souhaitée : </label>
+              <input type="date" id="dateAccueil" name="date" />
+            </div>
+            <!-- groupe Jour(s) de la semaine souhaité(s) -->
+            <label for="jours">Jour(s) de la semaine souhaité(s) : </label>
+            <div class="jrs">
+              <label for="lundi">Lundi</label>
+              <input type="checkbox" id="lundi" name="jours" value="lundi" />
 
-            <label for="mardi">Mardi</label>
-            <input type="checkbox" id="mardi" name="jours" value="mardi" />
+              <label for="mardi">Mardi</label>
+              <input type="checkbox" id="mardi" name="jours" value="mardi" />
 
-            <label for="mercredi">Mercredi</label>
-            <input
-              type="checkbox"
-              id="mercredi"
-              name="jours"
-              value="mercredi"
-            />
+              <label for="mercredi">Mercredi</label>
+              <input
+                type="checkbox"
+                id="mercredi"
+                name="jours"
+                value="mercredi"
+              />
 
-            <label for="jeudi">Jeudi</label>
-            <input type="checkbox" id="jeudi" name="jours" value="jeudi" />
+              <label for="jeudi">Jeudi</label>
+              <input type="checkbox" id="jeudi" name="jours" value="jeudi" />
 
-            <label for="vendredi">Vendredi</label>
-            <input
-              type="checkbox"
-              id="vendredi"
-              name="jours"
-              value="vendredi"
-            />
+              <label for="vendredi">Vendredi</label>
+              <input
+                type="checkbox"
+                id="vendredi"
+                name="jours"
+                value="vendredi"
+              />
 
-            <label for="samedi">Samedi</label>
-            <input type="checkbox" id="samedi" name="jours" value="samedi" />
-          </div>
-          <div>
-            <textarea
-              id="commentaires"
-              placeholder="Commentaire et informations complémentaires (allergies...)"
-              name="commentaires"
-            ></textarea>
+              <label for="samedi">Samedi</label>
+              <input type="checkbox" id="samedi" name="jours" value="samedi" />
+            </div>
+            <div>
+              <textarea
+                id="commentaires"
+                placeholder="Commentaire et informations complémentaires (allergies...)"
+                name="commentaires"
+              ></textarea>
+            </div>
           </div>
         </form>
         <button class="btnSubmit" type="submit">Envoyer</button>
