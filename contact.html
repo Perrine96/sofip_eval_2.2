@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
     <title>Contact</title>
   </head>
 
@@ -48,11 +48,11 @@
             <h2>Formulaire parent 1</h2>
             <!-- Groupe Nom/Prénom -->
             <div class="input-group">
-              <input type="text" placeholder="Nom" id="nom" name="nom" />
+              <input type="text" placeholder="Nom" id="nom1" name="nom" />
               <input
                 type="text"
                 placeholder="Prénom"
-                id="prenom"
+                id="prenom1"
                 name="prenom"
               />
             </div>
@@ -67,7 +67,7 @@
               <input
                 type="text"
                 placeholder="adresse"
-                id="adresse"
+                id="adresse1"
                 name="adresse"
               />
             </div>
@@ -76,13 +76,13 @@
               <input
                 type="text"
                 placeholder="batiment"
-                id="batiment"
+                id="batiment1"
                 name="batiment"
               />
               <input
                 type="text"
                 placeholder="code_postal"
-                id="code_postal"
+                id="code_postal1"
                 name="code_postal"
               />
             </div>
@@ -91,13 +91,13 @@
               <input
                 type="text"
                 placeholder="revenu_annuel"
-                id="revenu_annuel"
+                id="revenu_annuel1"
                 name="revenu_annuel"
               />
               <input
                 type="text"
                 placeholder="profession"
-                id="profession"
+                id="profession1"
                 name="profession"
               />
             </div>
@@ -105,13 +105,13 @@
               <input
                 type="number"
                 placeholder="nombre_enfants"
-                id="nombre_enfants"
+                id="nombre_enfants1"
                 name="nombre_enfants"
               />
             </div>
             <div class="full-width">
               <textarea
-                id="commentaires"
+                id="commentaires1"
                 placeholder="Commentaire et informations complémentaires (allergies...)"
                 name="commentaires"
               ></textarea>
@@ -122,11 +122,11 @@
             <h2>Formulaire parent 2</h2>
             <!-- Groupe Nom/Prénom -->
             <div class="input-group">
-              <input type="text" placeholder="Nom" id="nom" name="nom" />
+              <input type="text" placeholder="Nom" id="nom2" name="nom" />
               <input
                 type="text"
                 placeholder="Prénom"
-                id="prenom"
+                id="prenom2"
                 name="prenom"
               />
             </div>
@@ -141,7 +141,7 @@
               <input
                 type="text"
                 placeholder="adresse"
-                id="adresse"
+                id="adresse2"
                 name="adresse"
               />
             </div>
@@ -150,13 +150,13 @@
               <input
                 type="text"
                 placeholder="batiment"
-                id="batiment"
+                id="batiment2"
                 name="batiment"
               />
               <input
                 type="text"
                 placeholder="code_postal"
-                id="code_postal"
+                id="code_postal2"
                 name="code_postal"
               />
             </div>
@@ -165,13 +165,13 @@
               <input
                 type="text"
                 placeholder="revenu_annuel"
-                id="revenu_annuel"
+                id="revenu_annuel2"
                 name="revenu_annuel"
               />
               <input
                 type="text"
                 placeholder="profession"
-                id="profession"
+                id="profession2"
                 name="profession"
               />
             </div>
@@ -179,13 +179,13 @@
               <input
                 type="number"
                 placeholder="nombre_enfants"
-                id="nombre_enfants"
+                id="nombre_enfants2"
                 name="nombre_enfants"
               />
             </div>
             <div>
               <textarea
-                id="commentaires"
+                id="commentaires2"
                 placeholder="Commentaire et informations complémentaires (allergies...)"
                 name="commentaires"
               ></textarea>
@@ -197,19 +197,24 @@
           <h2>Formulaire enfant</h2>
           <!-- Groupe Nom/Prénom -->
           <div class="input-group">
-            <input type="text" placeholder="Nom" id="nom" name="nom" />
-            <input type="text" placeholder="Prénom" id="prenom" name="prenom" />
+            <input type="text" placeholder="Nom" id="nom3" name="nom" />
+            <input
+              type="text"
+              placeholder="Prénom"
+              id="prenom3"
+              name="prenom"
+            />
           </div>
           <div class="genreEnfant">
             <label for="sexe">Sexe : </label>
             <div class="male">
-              <label for="sexe">M</label>
-              <input type="radio" name="sexe" value="homme" />
+              <label for="sexeM">M</label>
+              <input type="radio" id="sexeM" name="sexe" value="homme" />
             </div>
 
             <div class="femelle">
-              <label for="sexe">F</label>
-              <input type="radio" name="sexe" value="femme" />
+              <label for="sexeF">F</label>
+              <input type="radio" id="sexeF" name="sexe" value="femme" />
             </div>
           </div>
           <!-- Groupe Date de naissance/Date d'accueil souhaitée -->
@@ -217,29 +222,39 @@
             <label for="date">Date de naissance : </label>
             <input type="date" id="date" name="date" />
 
-            <label for="date">Date d'accueil souhaitée : </label>
-            <input type="date" id="date" name="date" />
+            <label for="dateAccueil">Date d'accueil souhaitée : </label>
+            <input type="date" id="dateAccueil" name="date" />
           </div>
           <!-- groupe Jour(s) de la semaine souhaité(s) -->
           <label for="jours">Jour(s) de la semaine souhaité(s) : </label>
           <div class="jrs">
-            <label for="jours">Lundi</label>
-            <input type="checkbox" name="jours" value="lundi" />
+            <label for="lundi">Lundi</label>
+            <input type="checkbox" id="lundi" name="jours" value="lundi" />
 
-            <label for="jours">Mardi</label>
-            <input type="checkbox" name="jours" value="mardi" />
+            <label for="mardi">Mardi</label>
+            <input type="checkbox" id="mardi" name="jours" value="mardi" />
 
-            <label for="jours">Mercredi</label>
-            <input type="checkbox" name="jours" value="mercredi" />
+            <label for="mercredi">Mercredi</label>
+            <input
+              type="checkbox"
+              id="mercredi"
+              name="jours"
+              value="mercredi"
+            />
 
-            <label for="jours">Jeudi</label>
-            <input type="checkbox" name="jours" value="jeudi" />
+            <label for="jeudi">Jeudi</label>
+            <input type="checkbox" id="jeudi" name="jours" value="jeudi" />
 
-            <label for="jours">Vendredi</label>
-            <input type="checkbox" name="jours" value="vendredi" />
+            <label for="vendredi">Vendredi</label>
+            <input
+              type="checkbox"
+              id="vendredi"
+              name="jours"
+              value="vendredi"
+            />
 
-            <label for="jours">Samedi</label>
-            <input type="checkbox" name="jours" value="samedi" />
+            <label for="samedi">Samedi</label>
+            <input type="checkbox" id="samedi" name="jours" value="samedi" />
           </div>
           <div>
             <textarea
@@ -248,6 +263,7 @@
               name="commentaires"
             ></textarea>
           </div>
+          <button type="submit">Envoyer</button>
         </form>
       </section>
       <section class="maps-team">
