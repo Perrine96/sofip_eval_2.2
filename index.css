@@ -269,51 +269,114 @@ html {
 
 .footer {
   background-color: #A1D89F;
-  padding: 20px;
-  text-align: center;
+  padding: 20px 40px;
   font-size: 14px;
 }
 
-.newsletter {
+.footer-container {
   display: flex;
-  justify-content: center;
-  margin: 10px 0;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  color: #fff;
+}
 
-  img {
-    height: 30px;
+.footer-left, .footer-center, .footer-right {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+/* Alignement spécifique */
+
+.footer-left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-center {
+  align-items: center;
+  text-align: center;
+}
+
+.footer-right {
+  align-items: flex-end;
+  text-align: right;
+  
+  img{
+    height: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
   }
 }
 
-.newsletter input {
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: none;
-  width: 200px;
-}
+/* Newsletter reste horizontale */
 
-.newsletter button {
-  background-color: #5CA96B;
+.newsletter {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  button{
+   background-color: #5CA96B;
   color: white;
   border: none;
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
+  }
+  img{
+       height: 20px;
+  }
 }
 
-.social {
-  margin-top: 10px;
+.newsletter input {
+  flex-grow: 1;
+    padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  height: 25px;
+  width: 200px;
 }
+
+/* Social icons */
 
 .social img {
   margin: 0 5px;
+  height: 30px;
+  cursor: pointer;
+}
+.footer-bottom {
+  border-top: 1px solid white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.footer-bottom {
-  margin-top: 15px;
-  color: #333;
- 
+.footer-bottom .legal {
+  color: white;
+  text-decoration: none;
 }
+
+.footer-bottom .legal:hover {
+  text-decoration: underline;
+}
+
 
 
 
@@ -328,9 +391,12 @@ html {
     padding: 10px;
   
   }
-
+.presentation{
+  flex-direction: column-reverse;
+}
   .presentation img {
-    height: 140px;
+    
+    width: auto;
   }
 
   .presentation p {
@@ -370,8 +436,16 @@ html {
   .temoignage:nth-of-type(3) img.herisson {
     display: none;
   }
-  .footer {
+  .footer  {
     font-size: 12px;
+   .footer-container{
+   height: 25vh;
+   flex-direction: column;
+  
+   }
+  }
+  .footer-right{
+    padding-bottom: 5px;
   }
   .newsletter{
     display: flex;
@@ -435,3 +509,5 @@ html {
     flex-direction: row;
   }
 }
+
+
