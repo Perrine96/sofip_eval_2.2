@@ -54,11 +54,7 @@ Ouvrir un terminal dans le dossier du projet
 * Récupérer notre branche perso :
     * __Voir la liste des branches distantes__ : ```git branch -r```
     * __Récupérer une branche spécifique__ : ```git checkout -b nom-de-la-branche origin/nom-de-la-branche```
-* Protocole pour ajouter notre travail dans le projet :
-    * __Vérifier qu'on est bien sur notre branche perso__ : ```git branch```
-    * __Sinon, se déplacer dans notre branche__ : ```git checkout branche-perso``` 
-    * __Récupérer la branche main__ : ```git pull origin main```
-    * __Merger notre branche perso avec la branche main__ : ```git merge main```
+* Pusher notre code : 
     * __Ajouter notre code__ : ```git add .``` ou ```git add nom-du-fichier```
     * __Faire un commit__ : ```git commit -m "message-descriptif-du-commit"```
     * __Pusher notre code__ : ```git push origin branche-perso```
