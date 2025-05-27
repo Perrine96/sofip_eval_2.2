@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Choupissons - Galerie</title>
-    <link icon="favicon.ico" href="">
+    <meta name="description" content="Galerie de photos du site de la crèche Les Choupissons">
+    <title>Galerie</title>
+    <link rel="icon" href="image/logo.png">
     <!-- BALOO 2 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
-    <!-- BALOO 2 -->
+    <!--  -----  -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="galerie.css">
 </head>
+
 <body>
     <header>
         <nav class="navLaura">
@@ -25,27 +27,27 @@
 
     <main>
         <h1>Galerie</h1>
+        <!-- carrousel desktop -->
         <section class="carousel-desktop">
         <div class="carousel-container">
             <div class="carousel-track">
                 <div class="carousel-slide active">
-                    <img src="image/carousel1.jpg" alt="Photo d'une classe de crèche">
+                    <img src="image/salle-classe-creche.webp" alt="Photo d'une salle de classe de la crèche Les Choupissons">
                 </div>
                 <div class="carousel-slide">
-                    <img src="image/carousel2.jpg" alt="Photo d'une classe de crèche">
+                    <img src="image/ardoise-peinture-creche.webp" alt="Photo d'ardoises et de peinture">
                 </div>
                 <div class="carousel-slide">
-                    <img src="image/carousel3.jpg" alt="Photo d'une classe de crèche">
+                    <img src="image/enfant-jeu-educatif.webp" alt="Photo d'une enfant jouant à un jeu éducatif">
                 </div>
                 <div class="carousel-slide">
-                    <img src="image/carousel4.jpg" alt="Photo d'une classe de crèche">
+                    <img src="image/bureau-enfant-ecole.webp" alt="Photo d'un bureau d'enfant">
                 </div>
                 <div class="carousel-slide">
-                    <img src="image/carousel5.jpg" alt="Photo d'une classe de crèche">
+                    <img src="image/enfant-maitresse-ecole-peinture.webp" alt="Photo d'une maîtresse d'école et ses élèves en train de peindre">
                 </div>
             </div>
         </div>
-
         <div class="carousel-nav">
             <button class="nav-button prev">&#8592;</button>
             <div class="carousel-dots">
@@ -53,23 +55,42 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                </div>
+            </div>
             <button class="nav-button next">&#8594;</button>
         </div>
         </section>
+        <!-- fin carrousel desktop -->
 
         <!-- galerie mobile -->
         <section class="galerie-mobile">
-            <img class="galerie-mobile-img" src="image/carousel1.jpg" alt="Photo d'une classe de crèche">
-            <img class="galerie-mobile-img" src="image/carousel2.jpg" alt="Photo d'une classe de crèche">
-            <img class="galerie-mobile-img" src="image/carousel3.jpg" alt="Photo d'une classe de crèche">
-            <img class="galerie-mobile-img" src="image/carousel4.jpg" alt="Photo d'une classe de crèche">
-            <img class="galerie-mobile-img" src="image/carousel5.jpg" alt="Photo d'une classe de crèche">
+            <img class="galerie-mobile-img" src="image/salle-classe-creche.webp" alt="Photo d'une salle de classe de la crèche Les Choupissons">
+            <img class="galerie-mobile-img" src="image/ardoise-peinture-creche.webp" alt="Photo d'ardoises et de peinture">
+            <img class="galerie-mobile-img" src="image/enfant-jeu-educatif.webp" alt="Photo d'une enfant jouant à un jeu éducatif">
+            <img class="galerie-mobile-img" src="image/bureau-enfant-ecole.webp" alt="Photo d'un bureau d'enfant">
+            <img class="galerie-mobile-img" src="image/enfant-maitresse-ecole-peinture.webp" alt="Photo d'une maîtresse d'école et ses élèves en train de peindre">
         </section>
+        <!-- fin galerie mobile -->
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <p>Inscrivez-vous à notre newsletter pour suivre l’actualité de nos petits choupissons :</p>
+        <div class="newsletter">
+            <img src="/image/icons8-avion-en-papier-50.png" alt="">
+            <input type="email" placeholder="Votre e-mail" />
+            <button>S’inscrire</button>
+        </div>
+        <hr>
+        <div class="social">
+            <p>Suivez-nous</p>
+            <img src="/image/icons8-facebook-nouveau-50.png" alt="Facebook">
+            <img src="/image/icons8-instagram-50.png" alt="Instagram">
+            <img src="/image/icons8-linkedin-entouré-50.png" alt="LinkedIn">
+        </div>
+        <div class="footer-bottom">
+            <p>📞 Appelez-nous : 03 27 96 33 22</p>
+            <p>Copyright © 2025. Tous droits réservés.</p>
+            <a href="/mentions.html">Mention légales</a>
+        </div>
     </footer>
 
     <script src="galerie.js"></script>
