@@ -1,18 +1,16 @@
-/* PAGE GALERIE */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Tagesschrift&display=swap");
 
 body {
-    font-family: 'baloo2', sans-serif;
+    font-family: "baloo 2";
 }
 
 h1 {
     text-align: center;
-    padding-top: 15rem;
+    padding-top: 12rem;
     padding-bottom: 5rem;
+    font-size: 2.5rem;
+    font-family: "baloo 2";
+    font-weight: 600;
 }
 
 .navLaura {
