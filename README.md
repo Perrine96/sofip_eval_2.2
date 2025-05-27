@@ -50,14 +50,7 @@ Choisir l'une des méthodes suivantes :
 * SSH : ```git clone git@github.com:Perrine96/sofip_eval_02.git```
 
 #### 🔄 Gérer les branches
-Ouvrir un terminal dans le dossier du projet
-* Récupérer notre branche perso :
-    * __Voir la liste des branches distantes__ : ```git branch -r```
-    * __Récupérer une branche spécifique__ : ```git checkout -b nom-de-la-branche origin/nom-de-la-branche```
-* Pusher notre code : 
-    * __Ajouter notre code__ : ```git add .``` ou ```git add nom-du-fichier```
-    * __Faire un commit__ : ```git commit -m "message-descriptif-du-commit"```
-    * __Pusher notre code__ : ```git push origin branche-perso```
+Voir la documentation donnée en interne.
 
 
 ---
