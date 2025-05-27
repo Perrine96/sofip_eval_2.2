@@ -180,5 +180,6 @@ form button[type="submit"] {
   .formulaires-parents {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }

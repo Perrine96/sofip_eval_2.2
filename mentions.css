@@ -1,0 +1,119 @@
+main {
+  padding-top: 12rem;
+}
+
+.choupisson_gauche {
+  width: 20%;
+}
+
+.choupisson_droite {
+  width: 20%;
+}
+
+
+.mentions {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "baloo 2";
+}
+
+
+
+h1 {
+  font-weight: bold;
+  font-family: "baloo 2";
+  font-size: 36px;
+  text-align: center;
+}
+
+.text_mentions {
+  width: 100%;
+  height: auto;
+  font-family: "baloo 2";
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.mentionsgras {
+  font-weight: bold;
+  font-family: "baloo 2";
+  font-size: 18px;
+}
+
+.barre {
+  width: 586.001px;
+  height: 2px;
+  outline: 2px black solid;
+  outline-offset: -1px;
+  margin: auto;
+}
+
+.politiqueconf {
+  font-family: "baloo 2";
+  font-size: 22px;
+  text-align: center;
+}
+
+.paragrapheRGPD {
+  font-family: "baloo 2";
+  font-size: 17px;
+  text-align: center;
+}
+
+.texteRGPD {
+  font-family: "baloo 2";
+  font-size: 18px;
+}
+
+.texteRGPD {
+  margin: auto;
+  max-width: 1800px;
+}
+
+.dodoherisson {
+  width: 200px;
+  height: 200px;
+  position: r;
+  top: 0;
+  left: 0;
+}
+
+
+
+@media (width <=600px) {
+  main{    
+    padding: 8rem 2.3rem 2.5rem 2.5rem;
+  }
+  .dodoherisson {
+    width: 10px;
+  }
+  
+  .barre {
+    width: 70%;
+  }
+  .mentions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .choupisson_droite {
+    width: 50%;
+  }
+  .titreML {
+    text-align: center;
+  }
+  .choupisson_gauche {
+    display: none;
+  }
+  .textemobile {
+    width: 100%;
+    height: auto;
+    font-family: "baloo 2";
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
