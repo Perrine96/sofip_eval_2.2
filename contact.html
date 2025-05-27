@@ -118,8 +118,18 @@
             </div>
           </form>
           <!-- Formulaire parent 2  -->
-          <form action="" class="formParents">
-            <h2>Formulaire parent 2</h2>
+          <form id="formParent2" action="" class="formParents">
+            <h2>
+              Formulaire parent 2
+              <button>
+                <img
+                  class="chevronParent"
+                  src="/image/icons8-chevron-bas-30.png"
+                  alt="Chevron bas"
+                />
+              </button>
+            </h2>
+
             <!-- Groupe Nom/Prénom -->
             <div class="input-group">
               <input type="text" placeholder="Nom" id="nom2" name="nom" />
@@ -194,7 +204,17 @@
         </div>
         <!-- Formulaire enfant  -->
         <form action="" class="formEnfant">
-          <h2>Formulaire enfant</h2>
+          <h2>
+            Formulaire enfant
+            <button>
+              <img
+                class="chevronEnfant"
+                src="/image/icons8-chevron-bas-30.png"
+                alt="Chevron bas"
+              />
+            </button>
+          </h2>
+
           <!-- Groupe Nom/Prénom -->
           <div class="input-group">
             <input type="text" placeholder="Nom" id="nom3" name="nom" />
@@ -321,5 +341,7 @@
         <a href="/mentions.html">Mention légales</a>
       </div>
     </footer>
+
+    <script src="contact.js"></script>
   </body>
 </html>

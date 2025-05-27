@@ -17,6 +17,9 @@ h1 {
   gap: 20px;
   justify-items: center;
 }
+.chevron {
+  display: none;
+}
 /* Formulaires parents */
 .formulaires-parents {
   display: grid;
@@ -34,6 +37,9 @@ h1 {
 }
 .formParents {
   max-width: 573px;
+}
+.formParent2 {
+  display: none;
 }
 /* Formulaire enfant */
 .formEnfant {
@@ -237,6 +243,9 @@ form textarea {
   }
   .maps iframe {
     height: 200px;
+  }
+  .chevron {
+    display: block;
   }
   .formEnfant .input-group {
     width: 100%;
