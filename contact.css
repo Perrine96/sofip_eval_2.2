@@ -34,7 +34,6 @@ h1 {
   font-weight: 600;
   font-size: 2.25rem;
   text-align: center;
-  margin-bottom: 20px;
 }
 .formParents {
   max-width: 573px;
@@ -71,13 +70,13 @@ h1 {
   font-weight: 600;
   font-size: 2.25rem;
   text-align: center;
-  margin-bottom: 20px;
 }
 .male input,
 .femelle input {
   margin-left: 20px;
 }
 form {
+  background-color: rgba(245, 245, 245, 0.422);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -118,7 +117,8 @@ form textarea {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  width: 20%;
+  width: 10%;
+  box-shadow: 0px 3px 8px 1px rgba(21, 54, 94, 0.37);
   box-sizing: border-box;
   &:hover {
     transform: scale(1.1);
@@ -176,24 +176,39 @@ form textarea {
   text-align: center;
   margin-bottom: 2rem;
 }
-/* Style pour chaque membre de l'équipe */
+
 .membre {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+.membre div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 20px;
+  max-width: 200px;
 }
 .membre img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
 }
 .membre h3 {
+  font-size: 1.5rem;
   padding-bottom: 1.25rem;
+  font-family: "baloo 2";
+  font-weight: 600;
 }
 .membre p {
-  font-weight: 200;
-  font-size: 1rem;
+  font-weight: 100;
+  font-size: 1.2rem;
   font-family: "montserrat", sans-serif;
 }
 @media (max-width: 700px) {
@@ -204,10 +219,10 @@ form textarea {
   }
   .formEnfant h2,
   .formParents h2 {
+    justify-content: center;
     display: flex;
     align-items: center;
   }
-  /* Affichage en colonne pour les formulaires */
   .formulaires {
     display: flex;
     flex-direction: column;
@@ -218,21 +233,21 @@ form textarea {
     grid-template-columns: 1fr;
     width: 100%;
     gap: 20px;
-    margin: 0 auto; /* Centre le conteneur */
-    justify-items: center; /* Centre les éléments enfants */
+    margin: 0 auto;
+    justify-items: center;
   }
   .formParents,
   .formEnfant {
+    margin-top: 1rem;
     max-width: 90%;
     width: 100%;
   }
 
-  /* Adaptation de la section équipe */
   .team {
     display: block;
     text-align: center;
   }
-  /* Pour afficher chaque membre en colonne */
+
   .membre {
     flex-direction: column;
     align-items: center;
@@ -278,7 +293,7 @@ form textarea {
     flex-direction: column;
   }
   .btnSubmit {
-    width: 60%;
+    width: 30%;
     font-size: 1rem;
     padding: 10px;
     margin: 2rem auto;
