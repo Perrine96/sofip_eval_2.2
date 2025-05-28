@@ -17,7 +17,8 @@ body {
   );
 }
 
-/* nav */
+/* NAV */
+/* --------------------------------------- */
 .navLaura {
   z-index: 100;
   position: fixed;
@@ -53,6 +54,147 @@ body {
 
 
 
+/* FOOTER */
+/* --------------------------------------- */
+.footer {
+  background-color: #A1D89F;
+  padding: 20px 40px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+.footer-center, .footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.footer-left {
+  align-items: flex-start;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-center {
+  align-items: center;
+  text-align: center;
+}
+
+.footer-right {
+  align-items: flex-end;
+  text-align: right;
+  
+  img{
+    height: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.newsletter {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  button{
+   background-color: #5CA96B;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  }
+  img{
+       height: 20px;
+  }
+}
+
+.newsletter input {
+  flex-grow: 1;
+    padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  height: 25px;
+  width: 200px;
+}
+
+.social img {
+  margin: 0 5px;
+  height: 30px;
+  cursor: pointer;
+}
+.footer-bottom {
+  border-top: 1px solid white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .legal {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom .legal:hover {
+  text-decoration: underline;
+}
+
+
+
+/* MEDIA QUERIES */
+/* TABLETTES */
+@media (width <= 768px) {
+  .footer  {
+    font-size: 12px;
+  }
+
+  .footer-container{
+   height: 25vh;
+   flex-direction: column;
+  }
+
+  .footer-left {
+  align-items: center;
+  text-align: center;
+  }
+  
+  .footer-right{
+    padding-bottom: 5px;
+  }
+
+  .newsletter{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+
+/* MOBILES */
 @media (width <= 600px) {
   .navLaura {
     height: 100px;
@@ -64,5 +206,19 @@ body {
 
   .logo {
     width: 20%;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+  .footer-container{
+    height: 25vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+   }
+
+  .newsletter {
+    display: flex;
   }
 }
