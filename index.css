@@ -1,10 +1,9 @@
 @font-face {
-  font-family: 'KGHappy';
-  src: url('/image/kg_happy/KGHAPPY.ttf') format('truetype');
+  font-family: "KGHappy";
+  src: url("/image/kg_happy/KGHAPPY.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 
 body,
 html {
@@ -17,7 +16,7 @@ html {
   display: inline-block;
   margin: 0 10px;
   padding: 10px 18px;
-  background-color: #6BB4D6;
+  background-color: #6bb4d6;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -35,7 +34,11 @@ html {
   left: -100%;
   width: 200%;
   height: 100%;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
   transition: left 0.4s ease;
 }
 
@@ -49,7 +52,7 @@ html {
 }
 
 .content {
-  background: linear-gradient(#ADE5FF, #FFE88F, #BCE3B3);
+  background: linear-gradient(#ade5ff, #ffe88f, #bce3b3);
   text-align: center;
   padding: 250px 20px 40px 20px;
 }
@@ -57,7 +60,6 @@ html {
 .presentation {
   display: flex;
   flex-direction: row;
-
 }
 
 .content h1 {
@@ -97,7 +99,7 @@ html {
 
 /* Bulles hautes */
 .cloud-effect::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -60px;
   left: 50%;
@@ -108,23 +110,15 @@ html {
   border-radius: 50%;
   z-index: -1;
   opacity: 90%;
-  box-shadow:
-    -290px 35px 0 #ffffff,
-    -190px 30px 0 #ffffff,
-    -10px 10px 0 #ffffff,
-    -30px 10px 0 #fff,
-    50px 30px 0 #ffffff,
-    230px 40px 0 #ffffff,
-    310px 120px 0 #ffffff,
-    300px 180px 0 #ffffff,
-    -130px 20px 0 #ffffff,
-    290px 40px 0 #ffffff,
-    150px 20px 0 #fff;
+  box-shadow: -290px 35px 0 #ffffff, -190px 30px 0 #ffffff, -10px 10px 0 #ffffff,
+    -30px 10px 0 #fff, 50px 30px 0 #ffffff, 230px 40px 0 #ffffff,
+    310px 120px 0 #ffffff, 300px 180px 0 #ffffff, -130px 20px 0 #ffffff,
+    290px 40px 0 #ffffff, 150px 20px 0 #fff;
 }
 
 /* Bulles basses */
 .cloud-effect::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -60px;
   left: 50%;
@@ -135,25 +129,13 @@ html {
   border-radius: 50%;
   z-index: -1;
   opacity: 90%;
-  box-shadow:
-    -295px -50px 0 #ffffff,
-    -265px -30px 0 #ffffff,
-    -170px -30px 0 #ffffff,
-    -80px 0px 0 #fff,
-    40px -10px 0 #ffffff,
-    -320px -180px 0 #ffffff,
-    -320px -150px 0 #ffffff,
-    -320px -130px 0 #ffffff,
-    270px -40px 0 #ffffff,
-    100px -30px 0 #ffffff,
-    190px -20px 0 #ffffff;
+  box-shadow: -295px -50px 0 #ffffff, -265px -30px 0 #ffffff,
+    -170px -30px 0 #ffffff, -80px 0px 0 #fff, 40px -10px 0 #ffffff,
+    -320px -180px 0 #ffffff, -320px -150px 0 #ffffff, -320px -130px 0 #ffffff,
+    270px -40px 0 #ffffff, 100px -30px 0 #ffffff, 190px -20px 0 #ffffff;
 }
 
-
-
-
 @keyframes floatCloud {
-
   0%,
   100% {
     transform: translateY(0px);
@@ -180,20 +162,26 @@ html {
   padding: 0.3rem 0.6rem;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: default;
-  font-family: KGHappy;
+  font-family: "playwrite hu";
 }
 
 /* Effet hover */
 .valeurs-list span:hover {
   transform: scale(1.2);
-  background: linear-gradient(90deg, #ff4d4d, #ffcc00, #00cc66, #3399ff, #cc33ff);
+  background: linear-gradient(
+    90deg,
+    #ff4d4d,
+    #ffcc00,
+    #00cc66,
+    #3399ff,
+    #cc33ff
+  );
   background-size: 400%;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbowText 2s linear infinite;
 }
-
 
 /* Animation pour le dégradé arc-en-ciel */
 @keyframes rainbowText {
@@ -205,7 +193,6 @@ html {
     background-position: 100% 50%;
   }
 }
-
 
 .temoignages {
   display: flex;
@@ -237,7 +224,7 @@ html {
   font-size: 1rem;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   position: relative;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: "Comic Sans MS", cursive;
 }
 
 .bulle::after {
@@ -261,8 +248,6 @@ html {
   border-color: white transparent transparent transparent;
 }
 
-
-
 /* MOBILES */
 @media screen and (max-width: 768px) {
   .logo img {
@@ -272,12 +257,11 @@ html {
   .menu a {
     font-size: 16px;
     padding: 10px;
-  
   }
-.presentation{
-  flex-direction: column-reverse;
-  align-items: center;
-}
+  .presentation {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .presentation img {
     height: auto;
     width: 19rem;
@@ -290,27 +274,27 @@ html {
 
   .cloud-effect {
     background: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
   }
-  .cloud-effect::after{
- background: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
+  .cloud-effect::after {
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
   }
-  .cloud-effect::before{
- background: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
+  .cloud-effect::before {
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
   }
 
   .valeurs h2 {
     font-size: 24px;
   }
- 
+
   .bulle {
     font-size: 14px;
     padding: 15px;
@@ -322,16 +306,15 @@ html {
   }
 }
 
-
 /* TABLETTES */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .logo img {
     height: 100px;
   }
-.top-bar{
-  height: auto;
-  padding: 1px;
-}
+  .top-bar {
+    height: auto;
+    padding: 1px;
+  }
   .menu a {
     font-size: 18px;
     padding: 12px;
@@ -379,5 +362,3 @@ html {
     flex-direction: row;
   }
 }
-
-
