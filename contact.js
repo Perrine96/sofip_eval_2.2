@@ -3,7 +3,7 @@
 // 'Au clic' sur les CHEVRONS,le FORMULAIRE PARENT 2 et le FORMULAIRE ENFANT /apparait/
 
 const btn_form_parent = document.querySelector(".btn_form_parent");
-// console.log(btn_form_parent, "le chevron parent");
+console.log(btn_form_parent);
 
 const btn_form_enfant = document.querySelector(".btn_form_enfant");
 // console.log(btn_form_enfant, "le chevron enfant");
