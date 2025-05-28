@@ -22,7 +22,7 @@ body {
   z-index: 100;
   position: fixed;
   width: 100%;
-  height: 110px;
+  height:18%;
   font-family: "delius";
   display: flex;
   justify-content: space-around;
