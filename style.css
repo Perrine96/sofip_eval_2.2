@@ -1,5 +1,8 @@
- @import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Tagesschrift&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Tagesschrift&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Baloo+2:wght@400..800&family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Tagesschrift&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap");
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
 
 * {
   margin: 0;
@@ -23,7 +26,7 @@ body {
   z-index: 100;
   position: fixed;
   width: 100%;
-  height:18%;
+  height: 18%;
   font-family: "delius";
   display: flex;
   justify-content: space-around;
@@ -52,13 +55,11 @@ body {
   height: auto;
 }
 
-
-
 /* FOOTER */
 /* --------------------------------------- */
 .footer {
   font-family: "baloo 2";
-  background-color: #A1D89F;
+  background-color: #a1d89f;
   padding: 20px 40px;
   font-size: 14px;
 }
@@ -74,7 +75,8 @@ body {
   padding-bottom: 1rem;
 }
 
-.footer-center, .footer-right {
+.footer-center,
+.footer-right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,11 +100,11 @@ body {
 .footer-right {
   align-items: flex-end;
   text-align: right;
-  
-  img{
+
+  img {
     height: 20px;
   }
-  a{
+  a {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
@@ -115,22 +117,22 @@ body {
   gap: 10px;
   width: 100%;
   max-width: 300px;
-  button{
-   background-color: #5CA96B;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  cursor: pointer;
+  button {
+    background-color: #5ca96b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
   }
-  img{
-       height: 20px;
+  img {
+    height: 20px;
   }
 }
 
 .newsletter input {
   flex-grow: 1;
-    padding: 8px 12px;
+  padding: 8px 12px;
   border-radius: 8px;
   border: none;
   height: 25px;
@@ -164,36 +166,32 @@ body {
   text-decoration: underline;
 }
 
-
-
 /* MEDIA QUERIES */
 /* TABLETTES */
 @media (width <= 768px) {
-  .footer  {
+  .footer {
     font-size: 12px;
   }
 
-  .footer-container{
-   height: 25vh;
-   flex-direction: column;
+  .footer-container {
+    height: 25vh;
+    flex-direction: column;
   }
 
   .footer-left {
-  align-items: center;
-  text-align: center;
+    align-items: center;
+    text-align: center;
   }
-  
-  .footer-right{
+
+  .footer-right {
     padding-bottom: 5px;
   }
 
-  .newsletter{
+  .newsletter {
     display: flex;
     flex-direction: row;
   }
 }
-
-
 
 /* MOBILES */
 @media (width <= 600px) {
@@ -213,11 +211,11 @@ body {
     font-size: 14px;
   }
 
-  .footer-container{
+  .footer-container {
     height: 25vh;
     flex-direction: column;
     flex-wrap: nowrap;
-   }
+  }
 
   .newsletter {
     display: flex;
