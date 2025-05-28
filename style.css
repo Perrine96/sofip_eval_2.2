@@ -1,4 +1,4 @@
- @import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Tagesschrift&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Tagesschrift&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Baloo+2:wght@400..800&family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Tagesschrift&display=swap");
 
 * {
@@ -22,7 +22,7 @@ body {
   z-index: 100;
   position: fixed;
   width: 100%;
-  height:18%;
+  height: 18%;
   font-family: "delius";
   display: flex;
   justify-content: space-around;
@@ -50,8 +50,6 @@ body {
   width: 10%;
   height: auto;
 }
-
-
 
 @media (width <= 600px) {
   .navLaura {
