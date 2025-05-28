@@ -51,6 +51,8 @@ body {
   height: auto;
 }
 
+
+
 @media (width <= 600px) {
   .navLaura {
     height: 100px;
