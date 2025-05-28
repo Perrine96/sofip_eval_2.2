@@ -17,7 +17,8 @@ h1 {
   gap: 20px;
   justify-items: center;
 }
-.chevron {
+.btn_form_enfant,
+.btn_form_parent {
   display: none;
 }
 /* Formulaires parents */
@@ -201,7 +202,11 @@ form textarea {
     font-size: 2rem;
     padding: 40px 0;
   }
-
+  .formEnfant h2,
+  .formParents h2 {
+    display: flex;
+    align-items: center;
+  }
   /* Affichage en colonne pour les formulaires */
   .formulaires {
     display: flex;
@@ -244,8 +249,28 @@ form textarea {
   .maps iframe {
     height: 200px;
   }
-  .chevron {
+  .btn_form_enfant,
+  .btn_form_parent {
+    margin-left: 10px;
+    padding: 4px;
     display: block;
+    border: none;
+    background-color: #a0d8ef;
+    box-shadow: 0px 3px 8px 1px rgba(21, 54, 94, 0.37);
+    border-radius: 50px;
+  }
+  .hidden {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    pointer-events: none;
+  }
+  .visible {
+    overflow: hidden;
+    transition: max-height 0.8s ease, opacity 0.8s ease, padding 0.5s ease;
+  }
+  .visible:not(.hidden) {
+    opacity: 1;
   }
   .formEnfant .input-group {
     width: 100%;
