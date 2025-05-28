@@ -164,11 +164,6 @@ html {
   }
 }
 
-.herisson-img {
-  margin-top: 20px;
-  width: 140px;
-}
-
 .valeurs {
   margin-top: 40px;
 }
@@ -281,10 +276,11 @@ html {
   }
 .presentation{
   flex-direction: column-reverse;
+  align-items: center;
 }
   .presentation img {
-    
-    width: auto;
+    height: auto;
+    width: 19rem;
   }
 
   .presentation p {
@@ -319,7 +315,7 @@ html {
     font-size: 14px;
     padding: 15px;
   }
-  
+
   .temoignage:nth-of-type(2) img.herisson,
   .temoignage:nth-of-type(3) img.herisson {
     display: none;
@@ -343,6 +339,7 @@ html {
 
   .presentation img {
     height: 180px;
+    width: auto;
   }
 
   .presentation p {
